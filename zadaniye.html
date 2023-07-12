@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zadaniye.css">
+    <title>Website</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3621/3621464.png" alt=" logo">
+                </div>
+                <div class="bread">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button class="login" onclick="f1()">Log In</button>
+                    <button class="logout" onclick="f2()">Log Out</button>
+                    <button class="register" onclick="f1()">Register</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="add">
+                <fieldset>
+                    <legend>Add new computer</legend>
+                    <p>CPU</p>
+                    <input type="text" required id="cpu">
+                    <p>ROM (GB)</p>
+                    <input type="number" required id="rom">
+                    <p>RAM (GB)</p>
+                    <input type="number" required id="ram">
+                    <p>Price ($)</p>
+                    <input type="number" required id="price">
+                    <button onclick="addComputer()">Add computer</button>
+                </fieldset>
+            </div>
+            <section>
+                <div class="cards">
+                    <div class="card" id="a1">
+                        <img src="https://aztech.az/wp-content/uploads/2022/08/ASUS-VivoBook-15-M1502IA-BQ087-4.png" alt="Computer">
+                        <div class="info">
+                            <p>CPU: Intel Core i7</p>
+                            <p>ROM: 16GB</p>
+                            <p>RAM: 8GB</p>
+                            <p>Price: 1500$</p>
+                        </div>
+                        <button class="details">Details</button>
+                        <button class="x" id="1">X</button>
+                    </div>
+                    <div class="card" id="a2">
+                        <img src="https://www.vodafone.ua/shop/media/wysiwyg/novosti/Thinkbook_Plus_1.jpg" alt="Computer">
+                        <div class="info">
+                            <p>CPU: Intel Core i7</p>
+                            <p>ROM: 8GB</p>
+                            <p>RAM: 1GB</p>
+                            <p>Price: 1200$</p>
+                        </div>
+                        <button class="details">Details</button>
+                        <button class="x" id="2">X</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="zadaniye.js"></script>
+</body>
+</html>
